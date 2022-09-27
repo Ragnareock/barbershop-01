@@ -1,0 +1,54 @@
+.connection {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.connection-title {
+  color: $primaryBackgroundColor;
+  margin-bottom: 44px;
+}
+.connection-button {
+  color: $primaryBackgroundColor;
+}
+.connection {
+  background-image: linear-gradient(rgba(25, 28, 38, 0.757), rgba(25, 28, 38, 0.808)),
+    url(../images/connection-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  // outline: 2px solid red;
+}
+.connection-content {
+  width: calc((100% - 30px) / 2);
+}
+.connection-container {
+  display: flex;
+  gap: 30px;
+}
+.contacts-title {
+  margin-bottom: 40px;
+  color: $primaryBackgroundColor;
+}
+.contacts-address {
+  font-weight: $boldWeight;
+  color: $secondaryTextColor;
+}
+.contacts-tel {
+  color: $secondaryTextColor;
+}
+.contacts-mail {
+  text-decoration-line: underline;
+  color: $secondaryTextColor;
+}
+.contacts-pre-title {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.contacts-after-title {
+  color: $secondaryTextColor;
+}
