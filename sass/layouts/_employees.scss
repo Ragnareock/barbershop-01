@@ -14,8 +14,10 @@
   flex-wrap: wrap;
 }
 .card-list__item {
-  width: calc((100% - 60px) / 3);
-  position: relative;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .card-list__top-wrap {
   position: relative;

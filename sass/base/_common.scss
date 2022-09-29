@@ -2,9 +2,13 @@ body {
   /* background-color: $primaryBackgroundColor; */
   color: $primaryTextColor;
   font-family: $primaryFont;
-  font-size: 18px;
-  line-height: calc(30 / 18);
+  font-size: 16px;
+  line-height: calc(26 / 16);
   letter-spacing: $mediumLetterSpacing;
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 .link {
   text-decoration: none;
