@@ -16,6 +16,9 @@ body {
 .list {
   list-style: none;
 }
+.no-scroll {
+  overflow: hidden;
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;

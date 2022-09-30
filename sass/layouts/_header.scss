@@ -14,6 +14,9 @@
 .header__logo {
   margin-right: 130px;
 }
+.navigation {
+  display: none;
+}
 .navigation__list {
   display: flex;
   gap: 30px;
@@ -21,6 +24,7 @@
 .header__connect {
   margin-left: auto;
   margin-right: 20px;
+  display: none;
 }
 .navigation__link,
 .connect__tel {
@@ -38,4 +42,96 @@
 .connect__button {
   color: $primaryBackgroundColor;
   margin-left: 40px;
+}
+.menu-open {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+.menu-open-icon {
+  fill: $primaryBackgroundColor;
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $primaryBackgroundColor;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+}
+.menu-close {
+  margin-left: auto;
+  display: block;
+  margin-bottom: 30px;
+  border: none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+  cursor: pointer;
+}
+.mob-menu-link,
+.mob-connect-tel {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  color: $titleTextColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mob-menu-list {
+  margin-bottom: 64px;
+}
+.mob-connect-button {
+  display: block;
+  margin-top: 24px;
+}
+.mob-connect {
+  margin-bottom: 64px;
+}
+.mob-soc-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: $titleTextColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+.mob-soc-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mob-soc-list {
+  padding-left: 100px;
+  position: relative;
+}
+.mob-soc-list::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background-color: $titleTextColor;
+  top: 15px;
+}
+.mob-menu-bottom {
+  background-color: $secondaryBackgroundColor;
 }

@@ -1,88 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BarberShop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <!--  header -->
-  <!-- <body>
-    <header class="header">
-      <div class="container header__container">
-        <a class="logo header__logo" href="./index.html"
-          ><img src="./images/logo.svg" alt="site logo"
-        /></a>
-        <nav class="navigation">
-          <ul class="navigation__list list">
-            <li class="navigation__item"><a class="navigation__link link" href="">About</a></li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="">Services and prices</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarberShop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<!--  header -->
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo header__logo" href="./index.html"><img class="header__logo_white" src="./images/logo.svg"
+          alt="site logo" />
+      </a>
+      <nav class="navigation">
+        <ul class="navigation__list list">
+          <li class="navigation__item"><a class="navigation__link link" href="">About</a></li>
+          <li class="navigation__item">
+            <a class="navigation__link link" href="">Services and prices</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link link" href="#barbers">Barbers</a>
+          </li>
+          <li class="navigation__item"><a class="navigation__link link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="connect header__connect">
+        <a class="connect__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="connect__button button" type="button" data-modal-open>
+          Online-booking
+        </button>
+      </div>
+      <button class="menu-open" type="button">
+        <svg class="menu-open-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_open"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mob-menu is-hidden">
+      <div class="container">
+        <div class="mob-menu-top">
+        <button class="menu-close" type="button">
+          <svg class="menu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-nav">
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item"><a class="mob-menu-link link" href="">About</a></li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Services and prices</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="#barbers">Barbers</a>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#barbers">Barbers</a>
             </li>
-            <li class="navigation__item"><a class="navigation__link link" href="">Contacts</a></li>
+            <li class="mob-menu-item"><a class="mob-menu-link link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <div class="connect header__connect">
-          <a class="connect__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="connect__button button" type="button" data-modal-open>
+        </div>
+        <div class="mob-menu-bottom">
+        <div class="mob-connect">
+          <a class="mob-connect-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="mob-connect-button button" type="button" data-modal-open>
             Online-booking
           </button>
         </div>
-      </div>
-    </header>
-    <main> -->
-      <!--  hero -->
-      <section class="hero">
-        <div class="container hero__container">
-          <div class="social">
-            <ul class="social__list list">
-              <li class="social__item">
-                <a
-                  class="social__link link"
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >Instagram</a
-                >
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link link"
-                  href="https://www.youtube.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >Youtube</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="hero__content">
-            <p class="hero__pre-title pre-title pre-title--color-transparent">
-              A hair salon for men in Kyiv
-            </p>
-            <h1 class="hero__title">BarberShop</h1>
-            <p class="hero__after-title">
-              We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
-            </p>
-          </div>
+        <ul class="mob-soc-list list">
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="https://www.instagram.com/" target="_blank"
+              rel="noopener noreferrer nofollow">Instagram</a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="https://www.youtube.com/" target="_blank"
+              rel="noopener noreferrer nofollow">Youtube</a>
+          </li>
+        </ul>
         </div>
-      </section>
-      <!--  about -->
-      <!-- <section class="about section">
+      </div>
+    </div>
+  </header>
+  <main>
+    <!--  hero -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="social">
+          <ul class="social__list list">
+            <li class="social__item">
+              <a class="social__link link" href="https://www.instagram.com/" target="_blank"
+                rel="noopener noreferrer nofollow">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="https://www.youtube.com/" target="_blank"
+                rel="noopener noreferrer nofollow">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__content">
+          <p class="hero__pre-title pre-title pre-title--color-transparent">
+            A hair salon for men in Kyiv
+          </p>
+          <h1 class="hero__title">BarberShop</h1>
+          <p class="hero__after-title">
+            We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--  about -->
+    <!-- <section class="about section">
         <div class="container about__container">
           <ul class="picture-list list">
             <li class="picture-list__item">
@@ -110,8 +144,8 @@
           </div>
         </div>
       </section> -->
-      <!--  services -->
-      <!-- <section class="services section">
+    <!--  services -->
+    <!-- <section class="services section">
         <div class="container">
           <p class="services__pre-title pre-title pre-title--color-transparent">
             Spend your time with the best masters
@@ -160,8 +194,8 @@
           </button>
         </div>
       </section> -->
-      <!--  feature -->
-      <!-- <section class="feature section">
+    <!--  feature -->
+    <!-- <section class="feature section">
         <div class="container feature-container">
           <ul class="feature-list list">
             <li class="feature-item">
@@ -191,190 +225,173 @@
           </div>
         </div>
       </section> -->
-      <!--  employees -->
-      <section class="employees section" id="barbers">
-        <div class="container">
-          <p class="employees__pre-title pre-title pre-title--color-dark">
-            For true enjoyers of the atmosphere
-          </p>
-          <h2 class="employees__title title">Our barbers</h2>
-          <ul class="card-list list">
-            <li class="card-list__item">
-              <div class="card-list__top-wrap">
-                <img src="./images/barbers-img-1.jpg" width="370" height="346" alt="barbers" />
-                <p class="card-list__top-text">
-                  It is better to turn to the pros if the question concerns your appearance.
-                  Attention is what our client is guaranteed to receive.
-                </p>
-              </div>
-              <h3 class="card-list__item-title">John Smith</h3>
-              <p class="card-list__item-text">Extreme Barber</p>
-              <ul class="media list">
-                <li class="media__item">
-                  <a href="https://www.instagram.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a href="https://twitter.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a href="https://www.facebook.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a href="https://www.linkedin.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="card-list__item">
-              <div class="card-list__top-wrap">
-                <img src="./images/barbers-img-2.jpg" width="370" height="346" alt="barbers" />
-                <p class="card-list__top-text">
-                  Barbershop is a league of experienced men's hairdressers, where they come to the
-                  master for a haircut, and not to the barbershop.
-                </p>
-              </div>
-              <h3 class="card-list__item-title">Michele Doe</h3>
-              <p class="card-list__item-text">Extreme Barber</p>
-              <ul class="media list">
-                <li class="media__item">
-                  <a href="https://www.instagram.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a href="https://twitter.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a href="https://www.facebook.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a href="https://www.linkedin.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="card-list__item">
-              <div class="card-list__top-wrap">
-                <img src="./images/barbers-img-3.jpg" width="370" height="346" alt="barbers" />
-                <p class="card-list__top-text">
-                  Start Your Own Tradition. A haircut. Beard. Sign up online today! Stylish. Cool.
-                  Masterfully. A haircut. Beard. Coffee. Whiskey. Keep Calm Guys!
-                </p>
-              </div>
-              <h3 class="card-list__item-title">Alan Black</h3>
-              <p class="card-list__item-text">Extreme Barber</p>
-              <ul class="media list">
-                <li class="media__item">
-                  <a href="https://www.instagram.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a href="https://twitter.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a href="https://www.facebook.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a href="https://www.linkedin.com/" class="media__link link">
-                    <svg class="media__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--  gallery -->
-      <section class="gallery section">
-        <div class="container">
-          <p class="gallery-pre-title pre-title pre-title--color-dark">
-            In Latin, "barba" means "beard"
-          </p>
-          <h2 class="visually-hidden">Gallery</h2>
-          <ul class="gallery-list list">
-            <li class="gallery-item">
-              <img
-                class="gallery-img"
-                srcset="./images/gallery-img-1.jpg 1x, ./images/gallery-img-1-2x 2x.jpg"
-                src="./images/gallery-img-1.jpg"
-                width="270"
-                height="360"
-                alt="haircuts"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery-img-2.jpg"
-                width="270"
-                height="360"
-                alt="haircuts"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery-img-3.jpg"
-                width="270"
-                height="360"
-                alt="haircuts"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery-img-4.jpg"
-                width="270"
-                height="360"
-                alt="haircuts"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--  connection -->
-      <!-- <section class="connection section">
+    <!--  employees -->
+    <section class="employees section" id="barbers">
+      <div class="container">
+        <p class="employees__pre-title pre-title pre-title--color-dark">
+          For true enjoyers of the atmosphere
+        </p>
+        <h2 class="employees__title title">Our barbers</h2>
+        <ul class="card-list list">
+          <li class="card-list__item">
+            <div class="card-list__top-wrap">
+              <img src="./images/barbers-img-1.jpg" width="370" height="346" alt="barbers" />
+              <p class="card-list__top-text">
+                It is better to turn to the pros if the question concerns your appearance.
+                Attention is what our client is guaranteed to receive.
+              </p>
+            </div>
+            <h3 class="card-list__item-title">John Smith</h3>
+            <p class="card-list__item-text">Extreme Barber</p>
+            <ul class="media list">
+              <li class="media__item">
+                <a href="https://www.instagram.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="https://twitter.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="https://www.facebook.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="https://www.linkedin.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="card-list__item">
+            <div class="card-list__top-wrap">
+              <img src="./images/barbers-img-2.jpg" width="370" height="346" alt="barbers" />
+              <p class="card-list__top-text">
+                Barbershop is a league of experienced men's hairdressers, where they come to the
+                master for a haircut, and not to the barbershop.
+              </p>
+            </div>
+            <h3 class="card-list__item-title">Michele Doe</h3>
+            <p class="card-list__item-text">Extreme Barber</p>
+            <ul class="media list">
+              <li class="media__item">
+                <a href="https://www.instagram.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="https://twitter.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="https://www.facebook.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="https://www.linkedin.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="card-list__item">
+            <div class="card-list__top-wrap">
+              <img src="./images/barbers-img-3.jpg" width="370" height="346" alt="barbers" />
+              <p class="card-list__top-text">
+                Start Your Own Tradition. A haircut. Beard. Sign up online today! Stylish. Cool.
+                Masterfully. A haircut. Beard. Coffee. Whiskey. Keep Calm Guys!
+              </p>
+            </div>
+            <h3 class="card-list__item-title">Alan Black</h3>
+            <p class="card-list__item-text">Extreme Barber</p>
+            <ul class="media list">
+              <li class="media__item">
+                <a href="https://www.instagram.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="https://twitter.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="https://www.facebook.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media__item">
+                <a href="https://www.linkedin.com/" class="media__link link">
+                  <svg class="media__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--  gallery -->
+    <section class="gallery section">
+      <div class="container">
+        <p class="gallery-pre-title pre-title pre-title--color-dark">
+          In Latin, "barba" means "beard"
+        </p>
+        <h2 class="visually-hidden">Gallery</h2>
+        <ul class="gallery-list list">
+          <li class="gallery-item">
+            <picture>
+              <source srcset="./images/gallery-img-1.jpg 1x, ./images/gallery-img-1-2x 2x.jpg"
+                media="(min-width:1200px)">
+              <source srcset="./images/gallery-img-1-tab.jpg 1x, ./images/gallery-img-1-tab-2x 2x.jpg"
+                media="(min-width:768px)">
+              <source srcset="./images/gallery-img-1-mob.jpg 1x, ./images/gallery-img-1-mob-2x 2x.jpg"
+                media="(max-width:767px)" type="image/webp">
+              <img class="gallery-img" src="./images/gallery-img-1.jpg" width="418" alt="haircuts" />
+            </picture>
+          </li>
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery-img-2.jpg" width="270" height="360" alt="haircuts" />
+          </li>
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery-img-3.jpg" width="270" height="360" alt="haircuts" />
+          </li>
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery-img-4.jpg" width="270" height="360" alt="haircuts" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--  connection -->
+    <!-- <section class="connection section">
         <div class="container connection-container">
           <div class="connection-content">
             <h2 class="connection-title title">Online-booking</h2>
@@ -446,15 +463,8 @@
           <div class="modal-field">
             <label for="user-name" class="modal-label">Your name</label>
             <span class="input-wrap">
-              <input
-                type="text"
-                class="modal-input"
-                id="user-name"
-                name="user-name"
-                required
-                minlength="2"
-                maxlength="20"
-              />
+              <input type="text" class="modal-input" id="user-name" name="user-name" required minlength="2"
+                maxlength="20" />
               <svg class="input-icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
@@ -481,24 +491,18 @@
           <div class="modal-field">
             <label for="user-text" class="modal-label">Your message</label>
             <textarea name="user-text" id="user-text" placeholder="Text" class="online-comment">
-Hello, </textarea
-            >
+Hello, </textarea>
           </div>
           <div class="modal-field">
-            <input
-              type="checkbox"
-              class="modal-check visually-hidden"
-              name="privacy"
-              id="privacy"
-            />
-            <label for="privacy" class="check-text"
-              >I agree with the processing of my personal data</label
-            >
+            <input type="checkbox" class="modal-check visually-hidden" name="privacy" id="privacy" />
+            <label for="privacy" class="check-text">I agree with the processing of my personal data</label>
           </div>
           <button class="modal-button button" type="submit">Send</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
-  </body>
+    <script src="./js/menu.js"></script>
+</body>
+
 </html>

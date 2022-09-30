@@ -80,6 +80,8 @@
     @include retina {
       background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
         url(../images/hero-bg-2x.jpg);
+      background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+        url(../images/hero-bg-2x.webp);
     }
   }
 }
